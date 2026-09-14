@@ -20,6 +20,9 @@ function App() {
     const post = { titulo, url: imgSrc, descripcion };
     await axios.post(urlBaseServer + "/posts", post);
     getPosts();
+    setTitulo("");
+    setImgSRC("");
+    setDescripcion("");
   };
 
   // este método se utilizará en el siguiente desafío
